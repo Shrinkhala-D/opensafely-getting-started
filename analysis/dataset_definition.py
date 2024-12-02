@@ -14,3 +14,4 @@ dataset.define_population(has_registration)
 dataset.sex = patients.sex
 dataset.age = patients.age_on(index_date)
 dataset.age_plus1 = patients.age_on(index_date)+1
+dataset.age_plus2 = patients.age_on(index_date)+2
