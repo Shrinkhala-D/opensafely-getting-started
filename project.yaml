@@ -7,10 +7,3 @@ expectations:
 actions:
   generate_dataset:
     run: ehrql:v1 generate-dataset analysis/dataset_definition.py 
-
-  generate_report:
-    run: r:latest analysis/report.R
-    needs: [generate_dataset]
-    outputs:
-      moderately_sensitive:
-        chart: output/report.png
